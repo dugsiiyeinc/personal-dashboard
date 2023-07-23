@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/main.css" />
+    <title>Registration App</title>
+  </head>
+  <body>
+    <div class="gen-con">
+      <div class="con-login">
+        <h2>Sing Up</h2>
+        <form action="#" id="registerSubmit">
+          <div class="form-input">
+            <input
+              type="text"
+              class="input"
+              id="fullname"
+              placeholder="Mohamed abdulkadir"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <input
+              type="username"
+              class="input"
+              id="username"
+              placeholder="moha114"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <input
+              type="password"
+              autocomplete="true"
+              class="input"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <input
+              type="password"
+              autocomplete="true"
+              class="input"
+              id="confirm"
+              placeholder="Comfirm Password"
+              required
+            />
+          </div>
+
+          <div class="form-input">
+            <input type="submit" class="btn btn-register" value="Register" />
+          </div>
+
+          <div class="form-input">
+            <span class="SingUpLink"
+              >i have a Accoun <a href="/index.html"> Sign In</a></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./src/js/register.js"></script>
+  </body>
+</html>

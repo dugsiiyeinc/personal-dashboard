@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/main.css" />
+
+    <title>Login App</title>
+  </head>
+  <body>
+    <div class="gen-con">
+      <div class="con-login">
+        <form action="#" id="login-form">
+          <div class="form-input">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              class="input"
+              id="username"
+              placeholder="Enter Username"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <label for="password">password</label>
+            <input
+              type="password"
+              class="input"
+              id="password"
+              autocomplete="true"
+              placeholder="Enter Your Password"
+              required
+            />
+          </div>
+
+          <div class="form-input">
+            <input type="submit" class="btn btn-login" value="Login" />
+          </div>
+
+          <div class="form-input">
+            <span class="SingUpLink"
+              >i have a Accoun <a href="/register.html"> Sign Up</a></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./src/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+[
+	{
+		"id": 1,
+		"headline": "New Innovation in AI",
+		"content": "A groundbreaking development in the field of artificial intelligence...",
+		"category": "Technology",
+		"photoUrl": "https://images.unsplash.com/photo-1687360440491-702812c5728c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+		"userId" : 1
+	},
+	{
+		"id": 2,
+		"headline": "Advancements in Renewable Energy",
+		"content": "Exciting breakthroughs in renewable energy sources...",
+		"category": "Science",
+		"photoUrl": "https://images.unsplash.com/photo-1687360440491-702812c5728c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+		"userId" : 2
+	},
+	{
+		"id": 3,
+		"headline": "Health and Wellness Tips",
+		"content": "Discover effective strategies for maintaining a healthy lifestyle...",
+		"category": "Health",
+		"photoUrl": "https://images.unsplash.com/photo-1687360440491-702812c5728c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+		"userId" : 1
+	},
+	{
+		"id": 4,
+		"headline": "Exploring the Mysteries of the Universe",
+		"content": "Unveiling the secrets of black holes and distant galaxies...",
+		"category": "Space",
+		"photoUrl": "https://images.unsplash.com/photo-1687360440491-702812c5728c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+		"userId" : 1
+	},
+	{
+		"id": 5,
+		"headline": "Traveling the World on a Budget",
+		"content": "Tips and tricks for experiencing incredible destinations without breaking the bank...",
+		"category": "Travel",
+		"photoUrl": "https://images.unsplash.com/photo-1687360440491-702812c5728c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+		"userId" : 1
+	}
+
+]
