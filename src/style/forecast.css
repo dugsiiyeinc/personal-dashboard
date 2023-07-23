@@ -1,92 +1,90 @@
-
 .forecast-container {
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 10px;
 }
-  
-  .forecast-title {
-    text-align: center;
-    margin-top: 0;
-  }
-  
-  .forecast-widgets {
-    margin-top: 20px;
-    overflow-x: auto;
-  }
-  
-  .widget-container {
-    display: flex;
-    width: calc(100% - 40px);
-    margin: 0 auto;
-    white-space: nowrap;
-    margin-bottom: 20px;
-  }
-  
-  .widget-container button {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    padding: 10px 20px;
-    background: rgb(244, 219, 251);
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .widget-container button.active {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .forecast-details {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    justify-items: center;
-    grid-gap: 20px;
-  }
-  
-  .day {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  h3 {
-    margin-top: 0;
-  }
-  
-  .day-details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  
-  .day-details img {
-    max-width: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .high,
-  .low,
-  .condition {
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  .high {
-    color: #FF0000;
-  }
-  
-  .low {
-    color: #0000FF;
-  }
-  
-  .condition {
-    font-style: italic;
-  }
-  
+
+.forecast-title {
+  text-align: center;
+  margin-top: 0;
+}
+
+.forecast-widgets {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.widget-container {
+  display: flex;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.widget-container button {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: rgb(244, 219, 251);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.widget-container button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.forecast-details {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  grid-gap: 20px;
+}
+
+.day {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.day-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.day-details img {
+  max-width: 50px;
+  margin-bottom: 10px;
+}
+
+.high,
+.low,
+.condition {
+  margin: 0;
+  font-weight: bold;
+}
+
+.high {
+  color: #ff0000;
+}
+
+.low {
+  color: #0000ff;
+}
+
+.condition {
+  font-style: italic;
+}
 
 /* Media Querys */
 

@@ -15,15 +15,13 @@ let updateIndex;
 
 // getting localStorage notes
 let notes = JSON.parse(localStorage.getItem("notes")) || [];
-let userInformation = JSON.parse(localStorage.getItem('userInformation'));
+let userInformation = JSON.parse(localStorage.getItem("userInformation"));
 
-if(!userInformation){
-  window.location.href = '/index.html';
-  
+if (!userInformation) {
+  window.location.href = "/index.html";
 }
 
-
-console.log(userInformation)
+console.log(userInformation);
 showNotes(notes);
 addBox.addEventListener("click", () => {
   titleTag.focus();
@@ -37,13 +35,10 @@ closeIcon.addEventListener("click", () => {
   popupBox.classList.remove("show");
 });
 
-
-
-
-// button-contantdeleteBtn 
+// button-contantdeleteBtn
 function showNotes(n) {
   showNote.innerHTML = "";
-  n.filter(fil => fil.userId === userInformation.userId).forEach((note) => {
+  n.filter((fil) => fil.userId === userInformation.userId).forEach((note) => {
     showNote.innerHTML += `  <div class="note_note">
         <div class="note_details">
         <h2>${note.title}</h2>
@@ -128,10 +123,8 @@ form_data.addEventListener("submit", (e) => {
         title: titleTag.value,
         description: descTag.value,
         date: `${month} ${day}, ${year}`,
-        userId : userInformation.userId
+        userId: userInformation.userId,
       };
-
- 
 
       notes.push(noteInfo); // adding new note to notes
       localStorage.setItem("notes", JSON.stringify(notes)); // saving data in local storage

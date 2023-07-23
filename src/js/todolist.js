@@ -6,9 +6,9 @@ const clearButton = document.querySelector(".todo_clear-button");
 let tasks = [];
 
 // Ka hel macluumaadka userka iyadoo laga keenayo userka
-let userInformation = JSON.parse(localStorage.getItem('userInformation'));
+let userInformation = JSON.parse(localStorage.getItem("userInformation"));
 
-// kaydinta taskyada uu leeyahay user gaar ah  
+// kaydinta taskyada uu leeyahay user gaar ah
 function loadTasksFromLocalStorage() {
   const storedTasks = localStorage.getItem("tasks");
   if (storedTasks) {
@@ -28,7 +28,12 @@ inputField.addEventListener("keyup", (e) => {
     const inputVal = inputField.value.trim();
     if (inputVal.length > 0) {
       const taskId = tasks.length > 0 ? tasks[tasks.length - 1].id + 1 : 1;
-      const newTask = { id: taskId, task: inputVal, userId: userInformation.userId, completed: false };
+      const newTask = {
+        id: taskId,
+        task: inputVal,
+        userId: userInformation.userId,
+        completed: false,
+      };
       tasks.push(newTask);
       localStorage.setItem("tasks", JSON.stringify(tasks));
       renderTask(newTask);
@@ -47,11 +52,15 @@ function renderTasks() {
 
 // Shaqada lagu qabanayo task keli ah
 function renderTask(task) {
-  const liTag = `<li class="todo_list todo_pending" onclick="handleStatus(event)" data-task-id="${task.id}">
-    <input type="checkbox" ${task.completed ? 'checked': '' } />        
+  const liTag = `<li class="todo_list todo_pending" onclick="handleStatus(event)" data-task-id="${
+    task.id
+  }">
+    <input type="checkbox" ${task.completed ? "checked" : ""} />        
     <span class="todo_task">${task.id}.</span>
     <span class="todo_task">${task.task}</span>
-    <i class="todo_uil uil-notes "><span class="material-symbols-outlined todo_note-icon" onclick="deleteTask(${task.id})">
+    <i class="todo_uil uil-notes "><span class="material-symbols-outlined todo_note-icon" onclick="deleteTask(${
+      task.id
+    })">
     delete
     </span></i>
   </li>`;
@@ -91,7 +100,8 @@ function deleteTask(taskId) {
 // Function cusboonaysinaya pending taskska
 function updatePendingNum() {
   const pendingTasks = document.querySelectorAll(".todo_pending");
-  pendingNum.textContent = pendingTasks.length === 0 ? "waxba" : pendingTasks.length;
+  pendingNum.textContent =
+    pendingTasks.length === 0 ? "waxba" : pendingTasks.length;
 }
 
 // Tirtir kuli hadii buttonka la taabto
@@ -104,7 +114,7 @@ clearButton.addEventListener("click", () => {
 
 // Function kala filter gareenaya hadba userka ku jira
 function getTasksByUser(userId) {
-  return tasks.filter(task => task.userId === userId);
+  return tasks.filter((task) => task.userId === userId);
 }
 
 // Fiiri haddii taskiga la sameeyay kadibna beddel xaaladda ama stateka oo kadhig completed true
