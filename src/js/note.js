@@ -21,7 +21,7 @@ if (!userInformation) {
   window.location.href = "/index.html";
 }
 
-console.log(userInformation);
+
 showNotes(notes);
 addBox.addEventListener("click", () => {
   titleTag.focus();
@@ -63,14 +63,14 @@ function showNotes(n) {
 showNote.addEventListener("click", (e) => {
   if (e.target.classList.contains("deleteBtn")) {
     let id = e.target.getAttribute("noteId");
-    console.log(id);
+    
     deleteNote(id);
   }
 });
 
 function deleteNote(noted) {
   if (confirm("are you sure you want to delete this note?")) {
-    // console.log(notes);
+    
     const notesupdated = notes.filter((e) => e.id != noted); // removing seleted note from array tasks
     notes = notesupdated;
     console.log(notesupdated);
@@ -81,7 +81,7 @@ function deleteNote(noted) {
 
     // console.log("deleted"); // updating data in local storage
   } else {
-    alert("lama daledin");
+    alert("lama tirin");
   }
 }
 
@@ -109,7 +109,8 @@ form_data.addEventListener("submit", (e) => {
     updateIndex = null;
     console.log("after update ", isUpdate);
     showNotes(notes);
-    // return;
+    popupBox.classList.remove("show");
+   
   } else {
     if (titleTag.value !== "" && descTag.value !== "") {
       // getting month, day, year from the current date
