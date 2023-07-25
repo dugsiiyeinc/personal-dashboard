@@ -11,6 +11,7 @@ async function fetchForecastData(callback) {
 
 //   Macluumadka hawada kuwa ugu horeeya listigooda
 fetchForecastData((data) => {
+  
   cities = data.map((item) => item.location.split(",")[0]); // So furfuranaya magacyadooda magaalada ee ku jirta daatada
   updateCityButtons(); // Cusboonaysiinaya butonka magaalda ee widetka
   updateForecastDetails(cities[0]); // Tusi keliya mida ugu horaysa ee datada kujirta
@@ -27,6 +28,7 @@ let cityIndex = 0;
 
 //   Function cusboonaysinaya macluumadka hawada
 function updateForecastDetails(city) {
+
   fetchForecastData((data) => {
     // Find the forecast data for the selected city
     const selectedCityData = data.find((item) => item.location.includes(city));
