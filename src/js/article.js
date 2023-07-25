@@ -82,7 +82,6 @@ function displayArticle(article, scrollCheck) {
     console.log("end index ", endIndex);
 
     const slides = article.slice(startIndex, endIndex);
-
     slides
       .filter((fil) => fil.userId === userInformation.userId)
       .forEach((dato, ind) => {
