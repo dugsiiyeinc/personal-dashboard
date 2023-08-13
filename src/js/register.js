@@ -56,7 +56,7 @@ submitForm.addEventListener("submit", function (event) {
   });
 
   if (checkUser) {
-    swal("Stop", `Already Created`, "error");
+    swal("Stop", `Username Already Created`, "error");
     return;
   }
   const avator =
